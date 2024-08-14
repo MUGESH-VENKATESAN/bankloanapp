@@ -1,0 +1,37 @@
+/* ManageUsers.css */
+.container {
+  padding-bottom: 80px; /* Ensure enough space for footer */
+}
+
+.table-container {
+  margin-bottom: 2rem; /* Adjust as needed */
+  overflow-y: auto; /* Add vertical scroll if needed */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #f9f9f9;
+}
+
+.table th, .table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Adjust based on your footer's height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1; /* Adjust color as needed */
+  border-top: 1px solid #ddd; /* Adjust color as needed */
+  z-index: 1000; /* Ensure footer is on top */
+}

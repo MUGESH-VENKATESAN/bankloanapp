@@ -1,0 +1,111 @@
+/* AdminHome.css */
+
+.admin-home-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Sidebar on the left */
+.admin-sidebar {
+  position:relative;
+  top: 0;
+  left: 0;
+  height: 1800px;
+  width: 20%; /* Adjust width as needed */
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Sidebar on the right */
+.admin-right-sidebar {
+  position:relative;
+  top: 0;
+  left: 0;
+  height: 1800px;
+  width: 20%; /* Adjust width as needed */
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden; /* Prevent content from overflowing */
+  
+}
+
+/* Main content area */
+.admin-main-content {
+  margin: 0 auto; /* Center the main content */
+  padding: 20px;
+  width: 60%; /* Adjust width as needed */
+  padding-bottom: 500px; /* Space for the footer */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  box-sizing: border-box;
+  display: relative;
+
+}
+
+/* Reports container */
+.admin-reports-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Adjust the gap between sections as needed */
+}
+
+/* Reports table */
+.admin-reports-table {
+  max-height: 300px; /* Adjust height as needed */
+  overflow-y: auto;
+}
+
+/* Basic info container */
+.admin-reports-container-basicinfo {
+  width: 100%;
+  height: 200px;
+  border: 1px solid rgb(222, 222, 222);
+  overflow: auto;
+  padding: 10px;
+}
+
+/* Fix the table or other content widths */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Allow horizontal scroll if needed */
+  margin-bottom: 2rem; /* Adjust as needed */
+}
+
+/* Ensure buttons and elements are layered correctly */
+button {
+  z-index: 10;
+  position: relative;
+}
+
+/* Add media query for responsive design */
+@media (max-width: 768px) {
+  .admin-sidebar, .admin-right-sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .admin-main-content {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+}
+
+/* Footer */
+.footer {
+  position: relative; /* Changed from fixed to relative */
+  width: 100%;
+  height: 60px; /* Adjust based on your footer's height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1; /* Adjust color as needed */
+  border-top: 1px solid #ddd; /* Adjust color as needed */
+  margin-top: auto; /* Push footer to the bottom of the container */
+}
